@@ -27,33 +27,35 @@ class UserAll extends Component
     render() {
         return(
             <React.Fragment>
-            <h1>Halaman User</h1>
-            <table className="table table-hover table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <td>Nama</td>
-                        <td>Email</td>
-                        <td>Action</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="table-row-1">
-                        <td>Column 1</td>
-                        <td>Column 2</td>
-                        <td>Column 3</td>
-                    </tr>
-                    <tr className="table-row-2">
-                        <td>Column 1</td>
-                        <td>Column 2</td>
-                        <td>Column 3</td>
-                    </tr>
-                    <tr className="table-row-3">
-                        <td>Column 1</td>
-                        <td>Column 2</td>
-                        <td>Column 3</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h1>Halaman User</h1>
+                {<table className="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>Nama</td>
+                            <td>Email</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    {/* <tbody>
+                        {this.state.response.map((todo)=>(
+                            <tr className="table-row-1">
+                                <td>Column 1</td>
+                                <td>Column 2</td>
+                                <td>Column 3</td>
+                            </tr>
+                            <tr className="table-row-2">
+                                <td>Column 1</td>
+                                <td>Column 2</td>
+                                <td>Column 3</td>
+                            </tr>
+                            <tr className="table-row-3">
+                                <td>Column 1</td>
+                                <td>Column 2</td>
+                                <td>Column 3</td>
+                            </tr>
+                        ))}
+                    </tbody> */}
+                </table>}
             </React.Fragment>
         );
     }   
